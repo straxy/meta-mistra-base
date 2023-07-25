@@ -1,0 +1,30 @@
+From a4da855dcd8fd98a5dde4104db128b68fcda526b Mon Sep 17 00:00:00 2001
+From: Strahinja Jankovic <strahinja.p.jankovic@gmail.com>
+Date: Tue, 25 Jul 2023 22:43:39 +0200
+Subject: [PATCH] Enable PS2_0 and PS2_1 in DTS
+
+Signed-off-by: Strahinja Jankovic <strahinja.p.jankovic@gmail.com>
+---
+ arch/arm/boot/dts/sun4i-a10-cubieboard.dts | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+diff --git a/arch/arm/boot/dts/sun4i-a10-cubieboard.dts b/arch/arm/boot/dts/sun4i-a10-cubieboard.dts
+index 0645d6064..3268ef258 100644
+--- a/arch/arm/boot/dts/sun4i-a10-cubieboard.dts
++++ b/arch/arm/boot/dts/sun4i-a10-cubieboard.dts
+@@ -253,3 +253,12 @@ &usbphy {
+ 	usb2_vbus-supply = <&reg_usb2_vbus>;
+ 	status = "okay";
+ };
++
++&ps20 {
++	status = "okay";
++};
++
++&ps21 {
++	status = "okay";
++};
++
+-- 
+2.34.1
+
